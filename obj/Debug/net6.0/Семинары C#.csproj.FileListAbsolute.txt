@@ -1,0 +1,15 @@
+C:\Users\ALEXEY\Desktop\программирование\Семинары\Семинары C#\bin\Debug\net6.0\Семинары C#.exe
+C:\Users\ALEXEY\Desktop\программирование\Семинары\Семинары C#\bin\Debug\net6.0\Семинары C#.deps.json
+C:\Users\ALEXEY\Desktop\программирование\Семинары\Семинары C#\bin\Debug\net6.0\Семинары C#.runtimeconfig.json
+C:\Users\ALEXEY\Desktop\программирование\Семинары\Семинары C#\bin\Debug\net6.0\Семинары C#.dll
+C:\Users\ALEXEY\Desktop\программирование\Семинары\Семинары C#\bin\Debug\net6.0\Семинары C#.pdb
+C:\Users\ALEXEY\Desktop\программирование\Семинары\Семинары C#\obj\Debug\net6.0\Семинары C#.csproj.AssemblyReference.cache
+C:\Users\ALEXEY\Desktop\программирование\Семинары\Семинары C#\obj\Debug\net6.0\Семинары C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ALEXEY\Desktop\программирование\Семинары\Семинары C#\obj\Debug\net6.0\Семинары C#.AssemblyInfoInputs.cache
+C:\Users\ALEXEY\Desktop\программирование\Семинары\Семинары C#\obj\Debug\net6.0\Семинары C#.AssemblyInfo.cs
+C:\Users\ALEXEY\Desktop\программирование\Семинары\Семинары C#\obj\Debug\net6.0\Семинары C#.csproj.CoreCompileInputs.cache
+C:\Users\ALEXEY\Desktop\программирование\Семинары\Семинары C#\obj\Debug\net6.0\Семинары C#.dll
+C:\Users\ALEXEY\Desktop\программирование\Семинары\Семинары C#\obj\Debug\net6.0\refint\Семинары C#.dll
+C:\Users\ALEXEY\Desktop\программирование\Семинары\Семинары C#\obj\Debug\net6.0\Семинары C#.pdb
+C:\Users\ALEXEY\Desktop\программирование\Семинары\Семинары C#\obj\Debug\net6.0\Семинары C#.genruntimeconfig.cache
+C:\Users\ALEXEY\Desktop\программирование\Семинары\Семинары C#\obj\Debug\net6.0\ref\Семинары C#.dll
