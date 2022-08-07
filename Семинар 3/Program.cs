@@ -95,6 +95,6 @@ void Numbers(double num)
 }
 double check;
 Console.Write("Введите положительное число: ");
-check = Convert.ToDouble(Console.ReadLine());
+check = Convert.ToDouble(Console.ReadLine()); 
 if(check < 0) check = check * -1;
 Numbers(check);
