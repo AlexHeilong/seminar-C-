@@ -25,8 +25,6 @@ int[] CreateArray(int size)
     return newArray;
 }
 
-
-
 int[] ReverseArray(int[] array)
 {
     for(int i = 0, j = array.Length - 1; i < j; i++, j--)
@@ -53,7 +51,7 @@ int[] ReverseArray(int[] array)
     return array;
 }
 */
-
+/*
 void ShowArray(int[] array)
 {
     for(int i = 0; i < array.Length; i++)
@@ -62,7 +60,7 @@ void ShowArray(int[] array)
     Console.WriteLine();
 }
 
-/*
+
 Console.Write("Input size of array: ");
 int size = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input positive min value of elements: ");
@@ -91,7 +89,7 @@ bool CheckTriangle (int a, int b, int c)
 }
 */
 // Task 3. Написать метод, который на вход берет число, а возвращает его двоичное представление
-
+/*
 string Convert(int a)
 {
     string result = string.Empty;
@@ -119,3 +117,7 @@ int[] Fibonacci(int size, int a, int b)
     return result;
 }
 ShowArray(Fibonacci(5, 1, 2));
+*/
+
+
+
