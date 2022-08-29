@@ -181,7 +181,7 @@ Show2dArray1(array);
 */
 
 // Task 4. Задать двумерный массив и найти сумму элементов главной диагонали
-
+/*
 int[,] CreateRandom2dArray2(int rows, int colums, int minValue, int maxValue)
 {
     int[,] newArray = new int[rows, colums];
@@ -243,3 +243,75 @@ int max = Convert.ToInt32(Console.ReadLine());
 int[,] array = CreateRandom2dArray2(m, n, min, max); 
 Show2dArray2(array);
 Console.Write($"Сумма элементов в главной диагонали равна {SumOfElements(array)}");
+*/
+
+int[,] CreateRandom2dArray(int rows, int colums, int minValue, int maxValue)
+{
+    int[,] newArray = new int[rows, colums];
+
+    for(int i = 0; i < rows; i++)  
+    {
+        for(int j = 0; j < colums; j++) 
+        {
+            newArray[i, j] = new Random().Next(minValue, maxValue + 1);
+        }
+    }
+    return newArray;
+}
+
+void Show2dArray(int[,] array)
+{
+    for(int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i, j] + " ");
+        }
+        Console.WriteLine(); 
+    }
+    Console.WriteLine(); 
+}
+
+int[,] CutArray(int[,] array)
+{
+    int iMin = 0, jMin = 0;
+    int[,] newArray = new int[array.GetLength(0) - 1, array.GetLength(1) - 1]; // создаем новый массив, 
+    // в котором уже не будет одного столбца и одной строки
+    for(int i = 0; i < array.GetLength(0); i++)
+    {
+        for(int j = 0; j < array.GetLength(1); j++)
+        {
+            if(array[i, j] < array[iMin, jMin])
+            {
+                iMin = i;
+                jMin = j;
+            }
+        }
+        
+        for(int i = 0, m = 0; i < array.GetLength(0); i++, m++)
+        {
+            if(i == iMin) i++;
+            
+            for(int j = 0, n = 0; j < array.GetLength(1); j++, n++)
+            {
+                if(j != jMin) j++;
+
+                newArray[m, n] = array[i, j];
+            }
+        }
+    }
+    return newArray;
+}
+
+Console.Write("Input number of rows: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input number of colums: ");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input min possible value of element: ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input max possible value of element: ");
+int max = Convert.ToInt32(Console.ReadLine());
+
+int[,] array = CreateRandom2dArray(m, n, min, max); 
+Show2dArray(array);
+Show2dArray(CutArray(array));
