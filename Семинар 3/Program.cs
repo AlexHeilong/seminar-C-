@@ -83,7 +83,7 @@ Console.WriteLine($"Расстояние между точками А и В ра
 */
 // Задача 4. Необходимо написать программу, которая на вход принимает число N
 // и возвращает последовательность квадратов чисел от 1 до N. 
-
+/*
 void Numbers(double num)
 {
     int current = 1;
@@ -98,3 +98,5 @@ Console.Write("Введите положительное число: ");
 check = Convert.ToDouble(Console.ReadLine()); 
 if(check < 0) check = check * -1;
 Numbers(check);
+*/
+

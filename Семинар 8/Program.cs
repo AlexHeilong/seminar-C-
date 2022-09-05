@@ -116,7 +116,7 @@ else Show2dArray(ReplaceRowsColums(array));
 */
 // Task 3.
 // Из двумерного массива целых чисел удалить строку и столбец, на пересечении которых расположен 
-// наименьщий элемент
+// наименьший элемент
 /*
 int[,] CreateRandom2dArray(int rows, int colums, int minValue, int maxValue)
 {

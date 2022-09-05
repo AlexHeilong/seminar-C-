@@ -244,7 +244,7 @@ int[,] array = CreateRandom2dArray2(m, n, min, max);
 Show2dArray2(array);
 Console.Write($"Сумма элементов в главной диагонали равна {SumOfElements(array)}");
 */
-
+/*
 int[,] CreateRandom2dArray(int rows, int colums, int minValue, int maxValue)
 {
     int[,] newArray = new int[rows, colums];
@@ -315,3 +315,118 @@ int max = Convert.ToInt32(Console.ReadLine());
 int[,] array = CreateRandom2dArray(m, n, min, max); 
 Show2dArray(array);
 Show2dArray(CutArray(array));
+*/
+
+int[,] CreateRandom2dArray1(int rows, int colums, int minValue, int maxValue)
+{
+    int[,] newArray = new int[rows, colums];
+
+    for(int i = 0; i < rows; i++)  
+    {
+        for(int j = 0; j < colums; j++) 
+        {
+            newArray[i, j] = new Random().Next(minValue, maxValue + 1);
+        }
+    }
+    return newArray;
+}
+
+void Show2dArray1(int[,] array)
+{
+    for(int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i, j] + " ");
+        }
+        Console.WriteLine(); 
+    }
+    Console.WriteLine(); 
+}
+
+int[,] CreateRandom2dArray2(int rows, int colums, int minValue, int maxValue)
+{
+    int[,] newArray = new int[rows, colums];
+
+    for(int i = 0; i < rows; i++)  
+    {
+        for(int j = 0; j < colums; j++) 
+        {
+            newArray[i, j] = new Random().Next(minValue, maxValue + 1);
+        }
+    }
+    return newArray;
+}
+
+void Show2dArray2(int[,] array)
+{
+    for(int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i, j] + " ");
+        }
+        Console.WriteLine(); 
+    }
+    Console.WriteLine(); 
+}
+
+int [,] CreateArray3(int[,] array1, int[,] array2)
+{
+  int[,] resultArray = new int[array1.GetLength(0) ,array2.GetLength(1)];
+  for (int i = 0; i < resultArray.GetLength(0); i++)
+  {
+    for (int j = 0; j < resultArray.GetLength(1); j++)
+    {
+      int sum = 0;
+      for (int k = 0; k < array1.GetLength(1); k++)
+      {
+        sum += array1[i,k] * array2[k,j];
+      }
+      resultArray[i,j] = sum;
+    }
+  }
+  return resultArray;
+}
+
+void Show2dArray3(int[,] array)
+{
+    for(int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i, j] + " ");
+        }
+        Console.WriteLine(); 
+    }
+    Console.WriteLine(); 
+}
+
+Console.Write("Input number of rows: ");
+int m1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input number of colums: ");
+int n1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input min possible value of element: ");
+int min1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input max possible value of element: ");
+int max1 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Input number of rows: ");
+int m2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input number of colums: ");
+int n2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input min possible value of element: ");
+int min2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input max possible value of element: ");
+int max2 = Convert.ToInt32(Console.ReadLine());
+
+int[,] array1 = CreateRandom2dArray1(m1, n1, min1, max1); 
+Show2dArray1(array1);
+int[,] array2 = CreateRandom2dArray2(m2, n2, min2, max2); 
+Show2dArray2(array2);
+int[,] array3 = CreateArray3(array1, array2); 
+Show2dArray3(array3); 
+
+
+
+ 
